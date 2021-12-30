@@ -137,8 +137,10 @@ class Governance extends React.Component {
                   <tbody>
                     <tr>
                       <td className="text-center px-1">1</td>
-                      <img className="nav__icons" src={metamask} alt="Discord" title="Discord" />
-                      <td>Fairside Staker</td>
+                      <span>
+                        <img className="Metamask" width="20" height="20" src={metamask} alt="Metamask" title="Metamask" />
+                        <td>Fairside Staker</td>
+                      </span>
                       <td>542,412.03</td>
                       <td>14.2%</td>
                       <td>80+</td>
