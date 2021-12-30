@@ -12,13 +12,13 @@ const GovernanceSubmitProposal = () => {
     <section id="governance-proposal">
         <div className="main">
             <div className="row main-wrapper">
-
                 <div className="col-12 mb-2">
                     <div className="row">
                         <div className="col-12 col-md-6 mb-4 mb-md-2">
                             <h2 className="mb-1">Create Proposal</h2>
                         </div>
                         <div className="col-12 col-md-6 d-flex justify-content-center flex-column">
+                            
                             <div className="events__buttons d-block d-md-flex justify-content-end">
                                 <Link to="/governance/submit-proposal" className="events__button">Submit Proposal</Link>
                             </div>
@@ -41,7 +41,7 @@ const GovernanceSubmitProposal = () => {
                                                     <input id="gp-title" name="gp-title" className="form-control" placeholder="Provide context and additional info here..." />
                                                 </div>
                                                 <div className="form-group">
-                                                    <label for="gp-overview" className="form-label">Overview</label>
+                                                    <label for="gp-overview" className="form-label">overview</label>
                                                     <textarea className="form-control" id="gp-overview" rows="7" placeholder="Why should people vote on your proposal?"></textarea>
                                                 </div>
                                             </div>

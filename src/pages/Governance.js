@@ -5,6 +5,7 @@ import TableRow from '../components/TableRow';
 
 import '../assets/scss/governance.scss';
 import metamask from '../assets/imgs/Metamask.svg';
+import fairside_thumbnail from '../assets/imgs/Fairside_Thumbnail.svg';
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faArrowRight, faChevronRight} from "@fortawesome/free-solid-svg-icons"
@@ -101,7 +102,7 @@ class Governance extends React.Component {
                     <table className="table table-hover">
                       <thead>
                         <tr>
-                          <th colspan="2">Recent Proposals</th>
+                          <th colSpan="2">Recent Proposals</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -137,31 +138,40 @@ class Governance extends React.Component {
                   <tbody>
                     <tr>
                       <td className="text-center px-1">1</td>
-                      <span>
-                        <img className="Metamask" width="20" height="20" src={metamask} alt="Metamask" title="Metamask" />
-                        <td>Fairside Staker</td>
-                      </span>
+                      <td>
+                        <img className="Metamask" width='20px' height='20px' src={metamask} margin='100px' alt="Metamask" title="Metamask" />
+                        Fairside Staker
+                      </td>
                       <td>542,412.03</td>
                       <td>14.2%</td>
                       <td>80+</td>
                     </tr>
                     <tr>
                       <td className="text-center px-1">2</td>
-                      <td>Fairside Staker</td>
+                      <td>
+                        <img className="Metamask" width='20px' height='20px' src={metamask} margin='100px' alt="Metamask" title="Metamask" />
+                        Fairside Staker
+                      </td>
                       <td>542,412.03</td>
                       <td>14.2%</td>
                       <td>80+</td>
                     </tr>
                     <tr>
                       <td className="text-center px-1">3</td>
-                      <td>Fairside Staker</td>
+                      <td>
+                        <img className="Metamask" width='20px' height='20px' src={metamask} margin='100px' alt="Metamask" title="Metamask" />
+                        Fairside Staker
+                      </td>
                       <td>542,412.03</td>
                       <td>14.2%</td>
                       <td>80+</td>
                     </tr>
                     <tr>
                       <td className="text-center px-1">4</td>
-                      <td>Fairside Staker</td>
+                      <td>
+                        <img className="Metamask" width='20px' height='20px' src={metamask} margin='100px' alt="Metamask" title="Metamask" />
+                        Fairside Staker
+                      </td>
                       <td>542,412.03</td>
                       <td>14.2%</td>
                       <td>80+</td>
@@ -178,7 +188,7 @@ class Governance extends React.Component {
 
                     <div className="row">
                       <div className="col-4">
-                        
+                          <img src={fairside_thumbnail} width='110%' height = '100%' style={{'borderBottomLeftRadius':'7px', 'borderTopLeftRadius':'7px'}} alt="Deposit" title="Deposit" />
                       </div>
                       <div className="col-8">
                         <div className="governance__proposal governance__bottom--first">
@@ -205,6 +215,7 @@ class Governance extends React.Component {
                     </p>
                     <div className="governance__button--wrapper d-flex justify-content-end mt-4">
                       <Link to="/governance/submit-proposal" className="btn governance__button">Submit Proposal</Link>
+                      <Link to="/governance/vote-proposal" className="btn governance__button">Vote Proposal</Link>
                     </div>
                   </div>
                 </div>

@@ -14,6 +14,7 @@ import Events from "./pages/Events";
 import Assessments from "./pages/Assessments";
 import Governance from "./pages/Governance";
 import GovernanceSubmitProposal from "./components/GovernanceSubmitProposal";
+import VoteProposal from "./components/VoteProposal";
 import GovernanceProposals from "./components/GovernanceProposals";
 import NotFoundPage from "./pages/NotFoundPage";
 
@@ -38,6 +39,7 @@ function App() {
                 <Route path="/assessments" component={Assessments}/>
                 <Route exact path="/governance" component={Governance}/>
                 <Route path="/governance/submit-proposal" component={GovernanceSubmitProposal}/>
+                <Route path="/governance/vote-proposal" component={VoteProposal}/>
                 <Route path="/governance/proposals" component={GovernanceProposals}/>
                 <Route path="*" component={NotFoundPage}/>
               </Switch>
