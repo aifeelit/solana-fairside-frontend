@@ -1,0 +1,88 @@
+.logo {
+    max-height: 30px;
+}
+
+.li--connect {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: AileronSemiBold;
+    > button {
+        padding: .2rem 1.7rem;
+        font-size: .9rem;
+    }
+}
+
+.nav__icons {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s transform;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.socials__href {
+    margin-right: 1.6rem;
+}
+
+.li--connect {
+    button {
+        padding: .2rem 1.7rem;
+        font-size: 1rem;
+        color: #4569F5;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        transition: .2s transform ease-in-out;
+        will-change: transform;
+        z-index: 0;
+        background-color: #FBFBFB;
+        &::after {
+            background-color: #4569F5;
+            border-radius: 3rem;
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(-100%, 0) rotate(10deg);
+            transform-origin: top left;
+            transition: .2s transform ease-out;
+            will-change: transform;
+            z-index: -1;
+        }  
+        &:hover::after {
+            transform: translate(0, 0);
+        }  
+        &:hover {
+            color: white;
+            transform :scale(1.1);
+            will-change: transform;
+            background-color: white;
+        }
+    }
+    
+}
+
+#navbar_top {
+    .navbar-brand img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .socials__href{
+        display: none;
+    }
+    #navbarSocials{
+        align-items: end;
+        display: flex;
+        flex-basis: auto;
+    }
+    .logo {
+        max-height: 25px;
+    }
+}

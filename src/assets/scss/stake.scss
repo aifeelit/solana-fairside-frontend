@@ -1,0 +1,263 @@
+.stake-wrapper{
+    width: 100%;
+}
+
+.stake--header {
+    flex: 1;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    .stake__header--wrapper {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: end; 
+        margin: 0 auto;
+        h5 {
+            font-size: 1.5rem;
+        }
+    }
+    img{ 
+        width: 18px;
+        height: 18px;
+        position: relative;
+        top: -10px;
+    }
+    > p {
+        margin: 0 auto;
+        line-height: 19px;
+        font-size: .9rem;
+        font-family: AileronSemiBold;
+    }
+}
+
+.stake--menu {
+    flex: 2;
+}
+
+.stake--text {
+    p {
+        font-family: AileronLight;
+    }
+}
+
+.stake--info {
+    flex: 1;
+    a {
+        font-size: .8rem;
+    }
+    img {
+        width: 14px;
+        position: relative;
+        top: -1px;
+    }
+}
+
+.stake--link{
+    transition: all .2s ease-in-out;
+    &:hover > .card--stake{
+        transform: scale(1.03);
+    }
+}
+
+.card--stake {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    .img--wrapper {
+        flex: 4;
+        margin: 0 auto;
+    }
+    p {
+        flex: 1;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        span {
+            color: #4569F5;
+        }
+    }
+}
+
+.withdraw{
+    img {
+        height: 110px;
+    }
+}
+.deposit{
+    img {
+        height: 100px;
+    }
+}
+
+.card__info{
+    min-height: 56px;
+}
+
+.eth--input{
+    font-family: AileronLight;
+    background: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid #808080;
+    background-color: none;
+    font-size: .9rem;
+    padding: .8rem;
+    padding-left: 2.7rem;
+    color: inherit;
+    &:focus{
+        color: inherit;
+        background-color: transparent;
+    }
+}
+
+.stake__input--wrapper {
+    position: relative;
+}
+.stats__ethereum--logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 28px;
+}
+.stake--max b{
+    color: white;
+    position: absolute;
+    right: 24px;
+    top: 13px;
+    font-size: .6rem;
+    background: #4569F596;
+    padding: 2px 12px;
+    border-radius: 10%;
+    cursor: pointer;
+    &:hover{
+        background: #4569F5;
+    }
+}
+
+.btn--stake{
+    border-radius: 0.5rem;
+    padding: .8rem 5.5rem;
+    font-size: .9rem;
+    background-image: linear-gradient(-90deg, #a4b6ff, #4569F5);
+    border: 0;
+    transition: all .2s ease-in-out;
+    font-weight: normal;
+    width: 100%;
+    &:hover{
+        // transform: scale(1.03);
+    }
+}
+
+.stats--link{
+    box-shadow:none!important;
+}
+
+.stats--question{
+    width: 14px;
+    position: relative;
+    top: -1px;
+}
+
+@media screen and (max-width: 768px){
+    .card--stake {
+        width: auto;
+        height: 240px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.btn__options--wrapper {
+    font-family: AileronSemiBold;
+    background-color: #dadada;
+    color: #808080;
+    border-radius: .5rem;
+    padding: 4px;
+    .btn {
+        color: #808080;
+        border-radius: .5rem;
+        background-color: transparent;
+        border: none;
+        font-size: .9rem;
+        padding: .55rem 2.1rem;
+    }
+    .btn__option--stake {
+        &.active {
+            background-color: white!important;
+        }
+    }
+    .btn__option--unstake {
+        &.active {
+            background-color: white!important;
+        }
+    }
+    .btn-primary.active:focus {
+        box-shadow: none!important;
+    }
+    .btn:focus {
+        box-shadow: none!important;
+    }
+}
+
+.left {
+    .left__box {
+        background-color: white;
+        border-radius: .4rem;
+        box-shadow: rgba(69, 105, 245, 0.1) 0px 10px 15px -3px, rgba(69, 105, 245, 0.05) 0px 4px 6px -2px;
+        h5 {
+            color: inherit;
+        }
+    }
+    .left__box--amount {
+        font-family: AileronSemiBold;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: start;
+    }
+    .left__box--logo {
+        border-radius: .4rem;
+        img {
+            width: 80px;
+        }
+    }
+    .left__box--balance {
+        height: 100%;
+    }
+    .left_box--wrapper {
+        p {
+            color: #c4c4c4;
+            font-family: AileronSemiBold;
+            font-size: .8rem;
+            b {
+                color: #808080;
+                font-size: .9rem;
+            }
+        }
+        
+    }
+    .left__box--staking {
+        p {
+            font-family: AileronSemiBold;
+            font-size: .9rem;
+        }
+    }
+}
+
+.h5--form {
+    color: inherit;
+}
+
+@media (max-width: 1400px) and (min-width: 992px){
+    .left__box--logo {
+        img {
+            width: 50px!important;
+        }
+    }
+
+}

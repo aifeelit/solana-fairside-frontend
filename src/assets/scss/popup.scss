@@ -1,0 +1,43 @@
+.ReactModal__Overlay.ReactModal__Overlay--after-open{
+    background-color: rgba(148, 148, 148, 0.35)!important;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open{
+    text-align: center!important;
+    border: none!important;
+    border-radius: .5rem!important;;
+    background-color: #4569F5!important;
+    padding: 1.5rem 2.5rem!important;
+    h2 {
+        color: white!important;
+        font-size: 1rem;
+    }
+    p, label {
+        color: white!important;
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+    button {
+        background-color: #FBFBFB;
+        font-size: .8rem;
+        color: inherit;
+        padding: .8rem 3.4rem;
+        transition: all .2s ease-in-out;
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+    .form-check-label--custom {
+        position: relative;
+        top: 4px;
+    }
+    .form-check--custom {
+        background: none;
+        border: 1px solid #FBFBFB;
+        border-radius: 0;
+        &:focus{
+            background: #FBFBFB;
+        }
+    }
+    
+}
