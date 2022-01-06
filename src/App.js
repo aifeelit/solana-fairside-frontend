@@ -16,6 +16,11 @@ import Governance from "./pages/Governance";
 import GovernanceSubmitProposal from "./components/GovernanceSubmitProposal";
 import VoteProposal from "./components/VoteProposal";
 import GovernanceProposals from "./components/GovernanceProposals";
+
+import Dash_Members from "./components/Dash_Members";
+import Dash_Stakers from "./components/Dash_Stakers";
+import Dash_Governance from "./components/Dash_Governance";
+
 import NotFoundPage from "./pages/NotFoundPage";
 
 
@@ -34,6 +39,11 @@ function App() {
                   <Redirect to="/"/>
                 </Route>
                 <Route path="/stake" component={Stake}/>
+
+                <Route path="/dash/members" component={Dash_Members}/>
+                <Route path="/dash/stakers" component={Dash_Stakers}/>
+                <Route path="/dash/governance" component={Dash_Governance}/>
+
                 <Route path="/membership" component={Membership}/>
                 <Route path="/events" component={Events}/>
                 <Route path="/assessments" component={Assessments}/>

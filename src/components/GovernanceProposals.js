@@ -12,7 +12,6 @@ const GovernanceProposals = () => {
     <section id="governance-proposals">
         <div className="main">
             <div className="row main-wrapper">
-
                 <div className="col-12 mb-2">
                     <div className="row">
                         <div className="col-12 col-md-6 mb-4 mb-md-2 ps-0">
